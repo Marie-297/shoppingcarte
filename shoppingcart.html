@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bootstrap-5.3.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="shoppingcart.css">
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Marie's Klosset</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pants & Shorts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">T-Shirts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Dresses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Footwears</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Kids-section</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Inner-wears</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Brand Types
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Nike</a></li>
+              <li><a class="dropdown-item" href="#">Next</a></li>
+              <li><a class="dropdown-item" href="#">Polo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="padding-top: 50px;">
+    <!--header-->
+    <div class="row d-flex justify-content-center align-items-center" style="margin-top: 50px;margin-bottom: 20px;">
+      <div class="col-2">
+        <h6 style="font-weight: bold;">Sizes:</h6>
+      </div>
+      <div class="col">
+        <p>16 product(s) found.</p>
+      </div>
+      <div class="col">
+        <form class="form-control d-flex justify-content-center align-items-center ms-auto" style="border-style: none;width: fit-content;">
+          <label for="select" style="font-weight: bold;margin-right: 10px;">Order by</label>
+          <select class="form-select" aria-label="Size 3 select example" id="select" name="select" style="width: 150px;">
+            <option selected style="font-size: 12px;">Select</option>
+            <option value="select">Sizes</option>
+            <option value="select">Prices</option>
+          </select>
+        </form>
+      </div>
+    </div>
+
+    <div class="row firstrow">
+      <div class="col-2">
+        <div class="flex-sizes">
+          <button type="button" class="btn size-button">XS</button>
+          <button type="button" class="btn size-button">S</button>
+          <button type="button" class="btn size-button">M</button>
+          <button type="button" class="btn size-button">ML</button>
+          <button type="button" class="btn size-button">L</button>
+          <button type="button" class="btn size-button">XL</button>
+          <button type="button" class="btn size-button">XXL</button>
+        </div>
+        <div>
+          <p class="text-secondary" style="font-size: 12px;text-align: center;">Leave a star on Github if this repository was useful :&#41;</p>
+        </div>
+        <div>
+          <button type="button" class="btn" style="background-color: rgb(244, 238, 238);">&#9733;Star</button>
+          <button type="button" class="btn">848</button>
+        </div>
+        
+      </div>
+      <div class="col-10 pic-column">
+        <div class="card" style="width: 14rem;">
+          <img src="images/bluetshirt.jpg" class="card-img-top" alt="blue plain shirt">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;margin-right: 5px;">
+            <div class="card-header">
+              Blue Plain Rounded Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;10.90</li>
+              <li class="list-group-item text-secondary">or 9 &times;&dollar;1.20</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/greytshirt.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Gray Round-neck Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;29.45</li>
+              <li class="list-group-item text-secondary">or 5 &times;&dollar;5.89</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/tshirt2.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Flex Rounded Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;9.00</li>
+              <li class="list-group-item text-secondary">or 3 &times;&dollar;3.00</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/tshirt3.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Oversized Design Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;14.00</li>
+              <li class="list-group-item text-secondary">or 5 &times;&dollar;2.80</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-2"></div>
+      <div class="col-10 pic-column">
+        <div class="card" style="width: 14rem;">
+          <img src="images/tshirt4.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;margin-right: 5px;">
+            <div class="card-header">
+              Unisex Design Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;13.25</li>
+              <li class="list-group-item text-secondary">or 3 &times;&dollar;4.42</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/tshirt5.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Dark design Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;10.90</li>
+              <li class="list-group-item text-secondary">or 9 &times;&dollar;1.21</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/tshirtdes1.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Dark Plain Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;10.90</li>
+              <li class="list-group-item">or 9 &times;&dollar;1.21</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/white tshirt.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              White Plain Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;14.90</li>
+              <li class="list-group-item text-secondary">or 7 &times;&dollar;2.13</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-2"></div>
+      <div class="col-10 pic-column">
+        <div class="card" style="width: 14rem;">
+          <img src="images/shirt 9.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;margin-right: 5px;">
+            <div class="card-header">
+              Oversize Brown logo
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;14.90</li>
+              <li class="list-group-item text-secondary">or 7 &times;&dollar;2.13</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/shirt10.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Oversize Dark shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;25.90</li>
+              <li class="list-group-item text-secondary">or 12 &times;&dollar;2.16</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/shirt11.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Black Rounded Unisex
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;10.90</li>
+              <li class="list-group-item text-secondary">or 9 &times;&dollar;1.21</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/shirt12.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Unisex Colored T-shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;30.00</li>
+              <li class="list-group-item text-secondary">or 5 &times;&dollar;6.00</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px; margin-bottom: 200px;">
+      <div class="col-2"></div>
+      <div class="col-10 pic-column">
+        <div class="card" style="width: 14rem;">
+          <img src="images/shirt13.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;margin-right: 5px;">
+            <div class="card-header">
+              Blue Logo Rounded Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;40.00</li>
+              <li class="list-group-item text-secondary">or 4 &times;&dollar;10.00</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/shirt14.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Two-colored Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;24.00</li>
+              <li class="list-group-item text-secondary">or 3 &times;&dollar;8.00</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/shirt15.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Green Round-neck Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;16.00</li>
+              <li class="list-group-item text-secondary">or 8 &times;&dollar;2.00</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+        <div class="card" style="width: 14rem;">
+          <img src="images/shirt16.jpeg" class="card-img-top" alt="blue plain shirt" style="height: 300px;">
+          <button class="btn btn-dark absolute-image">Free Shipping</button>
+          <div class="card" style="width: 14rem;">
+            <div class="card-header">
+              Black Long-sleeved Shirt
+            </div>
+            <div class="short-line"></div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">&dollar;12.00</li>
+              <li class="list-group-item text-secondary">or 4 &times;&dollar;3.00</li>
+            </ul>
+            <a href="#"><button type="button" class="btn btn-dark" style="height: 50px;width: 100%;"><img src="images/shopping logo.png" style="width: 30px;height: 30px;margin-right: 5px;">Add to Cart</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="container-fluid bg-black d-flex" style="flex-direction: row;color: white;justify-content: space-around;padding-top: 20px;padding-bottom: 30px;">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h6>Follow Us</h6>
+        <div style="display: flex;justify-content: center;align-items: center;column-gap: 10px;">
+          <a href="facebook.com"><img src="./images/icon-facebook.svg"></a>
+          <a href="instagram.com"><img src="./images/icon-instagram.svg"></a>
+          <a href="Youtube.com"><img src="./images/icon-youtube.svg"></a>
+          <a href="pinterest.com"><img src="./images/icon-pinterest.svg"></a>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h6>Contact/Whatsapp Us</h6>
+        <a href="tel:0244500000">+233244500000</a>
+      </div>
+
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <h6>Promotions</h6>
+        <p style="font-style: italic;">No Promotions Yet</p>
+        <small class="text-secondary">Updated 12hours ago</small>
+      </div>
+    </div>
+  </footer>
+ 
+  
+
+  <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

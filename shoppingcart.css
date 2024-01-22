@@ -1,0 +1,51 @@
+.size-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 18px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.flex-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.btn {
+  border: 1px solid lightgray;
+}
+
+.pic-column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card, .card-header, .card-img-top .list-group-item {
+  border-style: none !important;
+
+}
+.list-group {
+  align-items: center;
+}
+
+.img {
+  position: relative;
+}
+
+.absolute-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 10px;
+}
+.short-line {
+  border-bottom: 3px solid rgb(147, 147, 7);
+  height: 40px;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+
+}
